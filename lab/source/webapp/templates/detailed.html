@@ -1,0 +1,9 @@
+<html><head></head><body>{% extends 'base.html' %}
+{% block title %} Detailed {% endblock %}
+{% block content %}
+     <h1>Подробнее</h1>
+     <p>Name: {{ task.name }}</p>
+    <p>Email: {{ task.email}}</p>
+    <p>Text: {{ task.text}}</p>
+    <div class="pre">text: {{ task.text }}</div>
+{% endblock %}</body></html>
