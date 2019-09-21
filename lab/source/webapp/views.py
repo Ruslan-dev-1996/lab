@@ -11,11 +11,11 @@ def index_view(request, *args, **kwargs):
     })
 
 
-def detailed_view(request, pk):
-    task = get_object_or_404(Book, pk=pk)
-    return render(request, 'detailed.html', context={
-       'task': task
-    })
+# def detailed_view(request, pk):
+#     task = get_object_or_404(Book, pk=pk)
+#     return render(request, 'detailed.html', context={
+#        'task': task
+#     })
 def form_storage_view(request, *args, **kwargs):
     if request.method == 'GET':
         form = BookForm()
