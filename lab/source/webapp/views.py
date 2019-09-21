@@ -11,11 +11,6 @@ def index_view(request, *args, **kwargs):
     })
 
 
-# def detailed_view(request, pk):
-#     task = get_object_or_404(Book, pk=pk)
-#     return render(request, 'detailed.html', context={
-#        'task': task
-#     })
 def form_storage_view(request, *args, **kwargs):
     if request.method == 'GET':
         form = BookForm()
@@ -53,7 +48,7 @@ def detailed_update_view(request, pk):
             task.email = form.cleaned_data['email']
             task.text = form.cleaned_data['text']
             task.save()
-            return redirect('detailed', pk=task.pk)
+            return redirect('index')
 
         return render(request, 'update.html', context={'form': form, 'task': task})
 

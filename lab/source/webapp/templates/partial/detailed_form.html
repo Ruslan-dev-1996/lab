@@ -1,5 +1,5 @@
-<html><head></head><body>{% csrf_token %}
-{#{{ form.as_p }}#}
+{% csrf_token %}
+
 
 
 {% for field in form %}
@@ -11,4 +11,4 @@
 {% endfor %}
 
 
-<p><input type="submit" value="{{ button_text  }}"></p></body></html>
+<p><input type="submit" value="{{ button_text  }}"></p>

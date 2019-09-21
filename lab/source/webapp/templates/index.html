@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
-        <h1 class="mt-3">books</h1>
+        <h1 class="mt-3">КНИГИ</h1>
         <hr>
         {% for i in appends %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
                 <div class="card">
                     <div class="card-body">
                         <a href="{% url 'delete' i.pk %}"><i class="fas fa-delete"></i> <i class="fas fa-trash-alt"></i></a>
-                        <a href="{% url 'update' i.pk %}"><i class="fas fa-edit"></i></a>
-                        <p class="card-text">{{ i.email  }}</p>
-                        <p class="card-text">{{ i.name  }}</p>
+                        <a href="{% url 'update' i.pk %}"><i class="fas fa-edit"></i> </a>
+                        <p class="card-text">{{ i.name  }} ({{ i.email }})</p>
+                        <hr>
                         <p class="card-text">{{ i.text }}</p>
+                        <hr>
                     </div>
                 </div>
             </div>

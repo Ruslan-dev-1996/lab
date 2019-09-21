@@ -1,0 +1,32 @@
+[
+{
+  "model": "webapp.book",
+  "pk": 48,
+  "fields": {
+    "name": "rus",
+    "email": "jylkybai.karakol@gmail.com",
+    "text": "dtfhgjhkjkkc kkj",
+    "created_at": "2019-09-21T11:17:08.531Z",
+    "edit_time": "2019-09-21T11:17:08.531Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$DpwqCeG9B8qY$mVJ69+aoYtAChiIgl1RZ9MugSk7S2VxzU2zx3RVXXXA=",
+    "last_login": "2019-09-21T05:58:17.595Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-20T14:17:02.486Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
