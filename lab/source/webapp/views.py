@@ -9,6 +9,8 @@ def index_view(request, *args, **kwargs):
     return render(request, 'index.html', context={
         'appends': appends
     })
+
+
 def detailed_view(request, pk):
     task = get_object_or_404(Book, pk=pk)
     return render(request, 'detailed.html', context={
